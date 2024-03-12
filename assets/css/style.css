@@ -1,12 +1,25 @@
+/* Reset Browser */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* PT Dung Chung */
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+}
+
 ul {
     list-style: none;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
 
 .full-page {
     width: 100%;
@@ -14,36 +27,88 @@ ul {
     background-color: bisque;
 }
 
+/* Menu Box */
 .menu-box {
     width: 200px;
     height: 230px;
+    left: 100px;
+    top: 50px;
     background-color: white;
     position: relative;
+    
 }
 
-.menu-item {
+/* Dieu chinh Menu Item */
+.menu-item p {
 
-    padding-left: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 10px;
     height: 30px;
     line-height: 27px;
  
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 
 }
 
+.menu-item:hover i {
+    display: inline;
+}
+
+.menu-item p:hover {
+    background-color: rgb(236, 239, 241);
+    color: rgb(242, 159, 108);
+    
+}
+
+.menu-item i {
+    display: none;
+}
+
+/* Sub Menu Layer 1 */
+
 .sub-menu {
     width: 200px;
-    height: 230px;
+    height: 100%;
+    position: absolute;
     left: 200px;
     top: 0;
     background-color: white;
-    position: absolute;
     display: none;
 }
 
 .menu-item:hover .sub-menu {
+    display: block;
+}
+
+/* Sub Menu Layer 2 */
+.sub-menu-item-1 {
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    background-color: white;
+    display: none;
+}
+
+.sub-item-1:hover .sub-menu-item-1 {
+    display: block;
+}
+
+
+.sub-menu-item-2 {
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    background-color: white;
+    display: none;
+}
+
+.sub-item-2:hover .sub-menu-item-2 {
     display: block;
 }
