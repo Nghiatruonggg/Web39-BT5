@@ -53,6 +53,10 @@ a {
 
 }
 
+.menu-item i {
+    display: none;
+}
+
 .menu-item:hover i {
     display: inline;
 }
@@ -63,9 +67,7 @@ a {
     
 }
 
-.menu-item i {
-    display: none;
-}
+
 
 /* Sub Menu Layer 1 */
 
@@ -78,6 +80,8 @@ a {
     background-color: white;
     display: none;
 }
+
+
 
 .menu-item:hover .sub-menu {
     display: block;
@@ -112,3 +116,6 @@ a {
 .sub-item-2:hover .sub-menu-item-2 {
     display: block;
 }
+
+
+/* Hoi ve Icon */
