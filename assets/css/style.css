@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+}
+
+ul {
+    list-style: none;
+}
+
+.full-page {
+    width: 100%;
+    height: 800px;
+    background-color: bisque;
+}
+
+.menu-box {
+    width: 200px;
+    height: 230px;
+    background-color: white;
+    position: relative;
+}
+
+.menu-item {
+
+    padding-left: 15px;
+    padding-top: 10px;
+    height: 30px;
+    line-height: 27px;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.sub-menu {
+    width: 200px;
+    height: 230px;
+    left: 200px;
+    top: 0;
+    background-color: white;
+    position: absolute;
+    display: none;
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+}
